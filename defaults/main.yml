@@ -12,8 +12,8 @@ domain_name: example.com # This also should be overridden in inventory
 server_fqdn: "{{ (server_name + '.' + domain_name) }}"
 server_subnet: "default-subnet" # should be on pair with default value from network_infra
 server_net: "{{ (prefix + 'otc-net') }}" # should be on pair with default value from network_infra
-security_group: "{{ (prefix + 'bastion_sg') }}"
-server_image: "Standard_Fedora_29_latest"
+security_group: "{{ (prefix + 'bastion-sg') }}"
+server_image: "Standard_Fedora_30_latest"
 server_flavor: "s2.large.1"
 server_ssh_user: "linux"
 server_volume_size: 10
